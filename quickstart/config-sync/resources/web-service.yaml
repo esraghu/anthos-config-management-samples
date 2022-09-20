@@ -1,0 +1,17 @@
+# web-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+  namespace: appspace
+  annotations:
+    cloud.google.com/neg: '{"ingress": true}'
+spec:
+  ports:
+  - name: host1
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx
+  type: ClusterIP
