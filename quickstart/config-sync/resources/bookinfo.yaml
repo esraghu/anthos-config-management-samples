@@ -112,6 +112,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ratings-v1
+  namespace: appspace
   labels:
     app: ratings
     version: v1
@@ -314,6 +315,7 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: bookinfo-productpage
+  namespace: appspace
   labels:
     account: productpage
 ---
