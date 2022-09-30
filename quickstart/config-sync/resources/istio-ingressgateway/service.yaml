@@ -16,6 +16,8 @@ kind: Service
 metadata:
   name: istio-ingressgateway
   namespace: appspace
+  annotations:
+    cloud.google.com/load-balancer-type: "Internal"
   labels:
     app: istio-ingressgateway
     istio: ingressgateway
