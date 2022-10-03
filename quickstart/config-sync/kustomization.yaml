@@ -1,5 +1,5 @@
 resources:
-- base
+- base/kustomization.yaml
 patches:
 - path: annotate-ilb.yaml
   target:
