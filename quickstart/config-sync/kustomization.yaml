@@ -1,0 +1,7 @@
+resources:
+- base
+
+patches:
+- path: annotate-ilb.yaml
+  target:
+    kind: Service
