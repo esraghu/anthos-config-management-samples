@@ -1,5 +1,5 @@
 resources:
-- base
+- resources
 patches:
 - path: annotate-ilb.yaml
   target:
