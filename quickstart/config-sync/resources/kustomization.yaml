@@ -1,0 +1,6 @@
+helmCharts:
+- name: solacecharts
+ repo: https://solaceproducts.github.io/pubsubplus-kubernetes-quickstart/helm-charts
+ version: 3.1.0
+ releaseName: solace-poc
+ namespace: appspace
