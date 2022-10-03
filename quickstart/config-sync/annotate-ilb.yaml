@@ -1,6 +1,0 @@
-apiVersion: apps/v1
-kind: Service
-metadata:
- name: any
- annotations:
-   cloud.google.com/load-balancer-type: Internal
