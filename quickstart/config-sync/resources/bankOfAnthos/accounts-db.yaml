@@ -34,7 +34,7 @@ spec:
         app: accounts-db
         tier: db
     spec:
-      serviceAccountName: gke-user@gke-validation.iam.gserviceaccount.com
+      serviceAccountName: pull-images-from-artifactory@gke-validation.iam.gserviceaccount.com
       containers:
       - name: accounts-db
         image: gcr.io/bank-of-anthos-ci/accounts-db:v0.5.8
