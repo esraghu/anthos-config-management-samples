@@ -17,7 +17,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  namespace: appspace
+  namespace: boa
 spec:
   selector:
     matchLabels:
@@ -43,7 +43,7 @@ spec:
               - all
           privileged: false
           readOnlyRootFilesystem: true
-        image: gcr.io/bank-of-anthos-ci/frontend:v0.5.8
+        image: nginx
         volumeMounts:
         - name: publickey
           mountPath: "/tmp/.ssh"
