@@ -27,7 +27,7 @@ spec:
       labels:
         app: balancereader
     spec:
-      serviceAccountName: default
+      serviceAccountName: boaservice
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000

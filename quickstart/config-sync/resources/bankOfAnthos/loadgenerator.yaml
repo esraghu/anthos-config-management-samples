@@ -30,7 +30,7 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      serviceAccountName: default
+      serviceAccountName: boaservice
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
       securityContext:
