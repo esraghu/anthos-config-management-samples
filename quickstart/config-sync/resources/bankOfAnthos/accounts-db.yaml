@@ -37,7 +37,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: accounts-db
-        image: docker.io/esraghu/accounts-db
+        image: gcr.io/bank-of-anthos-ci/accounts-db:v0.5.8
         envFrom:
           - configMapRef:
               name: environment-config
