@@ -27,7 +27,7 @@ spec:
       labels:
         app: frontend
     spec:
-      serviceAccountName: boaservice
+      serviceAccountName: default
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000
