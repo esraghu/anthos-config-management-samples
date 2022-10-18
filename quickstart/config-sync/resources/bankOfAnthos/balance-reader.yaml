@@ -27,7 +27,7 @@ spec:
       labels:
         app: balancereader
     spec:
-      serviceAccountName: boaservice
+      serviceAccountName: ksa-boa
       terminationGracePeriodSeconds: 5
       securityContext:
         fsGroup: 1000
