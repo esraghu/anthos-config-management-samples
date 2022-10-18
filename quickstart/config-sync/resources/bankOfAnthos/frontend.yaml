@@ -17,7 +17,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
-  namespace: boa
+  namespace: appspace
 spec:
   selector:
     matchLabels:
@@ -141,7 +141,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: frontend
-  namespace: boa
+  namespace: appspace
   annotations:
     cloud.google.com/load-balancer-type: "Internal"
 spec:
