@@ -34,7 +34,7 @@ spec:
         app: accounts-db
         tier: db
     spec:
-      serviceAccountName: default
+      serviceAccountName: ksa-boa
       containers:
       - name: accounts-db
         image: https://gcr.io/bank-of-anthos-ci/accounts-db:v0.5.8
